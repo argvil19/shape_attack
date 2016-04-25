@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>Shape Attack</title>
+		<style>
+			
+			body {
+				width:100%;
+				height:100%;
+				background-color:black;
+				overflow:hidden;
+			}
+
+			#player {
+				border-radius:50%;
+			}
+
+			#score {
+				position:fixed;
+				top:2%;
+				left:2%;
+				color:white;
+				text-transform:uppercase;
+				font-weight:bold;
+			}
+
+			#gameover {
+				display:none;
+				position:absolute;
+				left:35%;
+				font-size:3em;
+				font-weight:bold;
+				color:white;
+				text-align:center;
+				text-transform:uppercase;
+				z-index:200;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+		<div id="gamediv">
+			<div id="player"></div>	
+		</div>
+		<div id="score">
+			<p id="displayScore"><br/></p>
+		</div>
+
+		<div id="gameover">
+			<p class="gameover-text">game over</p>
+			<button id="reset">Play again</button>
+		</div>
+	
+		<script src="script.js"></script>
+	</body>
+</html>
